@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+	  <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+	<ItemGroup>
+		<None Remove="stylecop.json"></None>
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="stylecop.json"></Content>
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="StyleCop.Analyzers" Version="1.2.0-*">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+</Project>

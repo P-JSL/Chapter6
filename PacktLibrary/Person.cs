@@ -4,7 +4,7 @@ using static System.Console;
 
 namespace Packt.Shared;
 
-public class Person : Object
+public class Person : Object, IComparable<Person>
 {
     //fields
     public string? Name;
@@ -81,6 +81,21 @@ public class Person : Object
         }
     }
 
-    
+    public int CompareTo(Person? other){
+        return Name.CompareTo(other?.Name);
+    }
+
+    //exception method
+    public void TimeTravel(DateTime when)
+    {
+        if(when <= DateOfBirth)
+        {
+            throw new PersonException("if you travel back in time to a date earlier than your own birth, then the universe will explode!");
+        }
+        else
+        {
+            WriteLine($"Welcome to {when:yyyy}");
+        }
+    }
 
 }

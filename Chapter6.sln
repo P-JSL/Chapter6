@@ -9,12 +9,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PacktLibrary", "PacktLibrar
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NullHandling", "NullHandling\NullHandling.csproj", "{99D1FC42-5071-42C3-892E-4080CF6702DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeAnalyzing", "CodeAnalyzing\CodeAnalyzing.csproj", "{A69DCCD1-D4A4-4445-AC4D-7855D4AA3B52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeAnalyzing", "CodeAnalyzing\CodeAnalyzing.csproj", "{A69DCCD1-D4A4-4445-AC4D-7855D4AA3B52}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "솔루션 항목", "솔루션 항목", "{50BE2169-AE4F-4CD7-802B-444F9C79150B}"
 	ProjectSection(SolutionItems) = preProject
 		stylecop.json = stylecop.json
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise02", "Exercise02\Exercise02.csproj", "{5EBCD47A-F249-4E41-B580-5C4AE9134343}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +40,10 @@ Global
 		{A69DCCD1-D4A4-4445-AC4D-7855D4AA3B52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A69DCCD1-D4A4-4445-AC4D-7855D4AA3B52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A69DCCD1-D4A4-4445-AC4D-7855D4AA3B52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EBCD47A-F249-4E41-B580-5C4AE9134343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EBCD47A-F249-4E41-B580-5C4AE9134343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EBCD47A-F249-4E41-B580-5C4AE9134343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EBCD47A-F249-4E41-B580-5C4AE9134343}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

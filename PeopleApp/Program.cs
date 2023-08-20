@@ -43,5 +43,38 @@ public class Program
         harry.Poke();
         harry.Poke();
         harry.Poke();
+
+        // non-generic collection
+        System.Collections.Hashtable lookupObject = new();
+        lookupObject.Add(key: 1, value: "Alpha");
+        lookupObject.Add(key: 2, value: "Beta");
+        lookupObject.Add(key: 3, value: "Gamma");
+        lookupObject.Add(key: 4, value: "Delta");
+
+        int key = 3;
+        WriteLine(
+            format: "key {0} has value : {1}",
+            arg0: key,
+            arg1: lookupObject[key]
+            );
+
+        WriteLine(
+            format: "key {0} has value : {1}",
+            arg0: "harry",
+            arg1: lookupObject[harry]
+            );
+
+        // generic-collections
+        Dictionary<int, string> lookupIntString = new();
+        lookupIntString.Add(key: 1, value: "Alpha");
+        lookupIntString.Add(key: 2, value: "Beta");
+        lookupIntString.Add(key: 3, value: "Gamma");
+        lookupIntString.Add(key: 4, value: "Delta");
+
+        WriteLine(
+            format: "key {0} has value : {1}",
+            arg0: key,
+            arg1: lookupIntString[key]
+            );
     }
 }
